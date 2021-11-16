@@ -1,4 +1,4 @@
-#串行GC：
+**串行GC**：
 ```
 D:\IdeaProject\jvm\src\main\java\com\geektime\week1>java -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xmx1g -Xms1g -XX:+UseSerialGC GCLogAnalysis
 正在执行...
@@ -27,7 +27,7 @@ Heap
  适合在单核CPU且几百M的堆内存时使用。
 
 
-#并行GC： 
+**并行GC**： 
 ```
  D:\IdeaProject\jvm\src\main\java\com\geektime\week1>java -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xmx1g -Xms1g -XX:+UseParallelGC GCLogAnalysis
 正在执行...
@@ -69,7 +69,7 @@ Heap
  适合吞吐量大的系统，但不一定能够减少GC暂停时间，在不需要GC的时候，不会消耗任何资源，并行GC为java8的默认GC。
  
  
-#CMSGC： 
+**CMSGC**： 
 ``` 
 D:\IdeaProject\jvm\src\main\java\com\geektime\week1>java -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xmx1g -Xms1g -XX:+UseConcMarkSweepGC GCLogAnalysis
 正在执行...
@@ -111,7 +111,7 @@ Heap
  默认为CPU核心数的四分之一，GC暂停时间短，但同时也会造成老年代内存碎片化的问题。
 
 
-#G1GC： 
+**G1GC**： 
 ``` 
 D:\IdeaProject\jvm\src\main\java\com\geektime\week1>java -XX:+PrintGC -XX:+PrintGCDateStamps -Xmx1g -Xms1g -XX:+UseG1GC GCLogAnalysis
 正在执行...

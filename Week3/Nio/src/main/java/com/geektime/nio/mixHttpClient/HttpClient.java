@@ -1,4 +1,4 @@
-package mixHttpClient;
+package com.geektime.nio.mixHttpClient;
 
 
 import org.apache.http.client.methods.CloseableHttpResponse;

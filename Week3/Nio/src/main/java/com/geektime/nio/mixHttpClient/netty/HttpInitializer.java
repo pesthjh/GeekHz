@@ -1,4 +1,4 @@
-package mixHttpClient.netty;
+package com.geektime.nio.mixHttpClient.netty;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
